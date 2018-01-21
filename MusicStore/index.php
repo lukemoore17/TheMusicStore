@@ -1,0 +1,37 @@
+<?php
+    include_once("./code/config.php"); // Include configuration file
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Welcome to The Music Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="PageWrapper" class="container container-fluid">
+        <?php include_once("./header.php"); ?>
+
+        <div class="container container-fluid">
+            <h5 class="alert alert-success" role="alert">Welcome to The Music Store!</h5>
+            <br />
+            <h6 class="alert alert-warning" style="text-align:center">
+                <a href="./login.php">Log in</a> or <a href="./new_user_registration.php">create an account</a> to save your information and track your order history.
+            </h6>
+            <h6 class="alert alert-warning" style="text-align:center"><a href="./shop.php">Start Shopping</a></h6>
+        </div>
+
+        <br /><br />
+        <?php include_once("./footer.html"); ?>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

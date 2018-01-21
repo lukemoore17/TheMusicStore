@@ -1,0 +1,64 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>MusicStore</Name>
+    <ProjectGuid>9ee9ccc3-1634-4ebd-8eb5-0790a2b5a892</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>MusicStore</AssemblyName>
+    <SpecificPageValue>index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="account.php" />
+    <Compile Include="account_info.php" />
+    <Compile Include="account_orderitems.php" />
+    <Compile Include="account_orders.php" />
+    <Compile Include="cart.php" />
+    <Compile Include="code\AppData.php" />
+    <Compile Include="code\clearcart.php" />
+    <Compile Include="code\config.php" />
+    <Compile Include="code\customer_info_validate.php" />
+    <Compile Include="code\logout.php" />
+    <Compile Include="code\new_user_validateform.php" />
+    <Compile Include="code\uploadpicture.php" />
+    <Compile Include="contact.php" />
+    <Compile Include="customer_bill_info.php" />
+    <Compile Include="customer_info.php" />
+    <Compile Include="customer_info_new.php" />
+    <Compile Include="login.php" />
+    <Compile Include="index.php" />
+    <Compile Include="new_user_registration.php" />
+    <Compile Include="order_confirmation.php" />
+    <Compile Include="purchase_summary.php" />
+    <Compile Include="customer_info_registered.php" />
+    <Compile Include="shop.php" />
+    <Compile Include="template.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+    <Folder Include="txt\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accountnav.html" />
+    <Content Include="footer.html" />
+    <Content Include="header.php" />
+    <Content Include="txt\ModalCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MusicStoreDataLayer\MusicStoreDataLayer.phpproj">
+      <Name>MusicStoreDataLayer</Name>
+      <Project>{72715a78-9ffd-404e-a902-68948a3bd624}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
